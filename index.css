@@ -1,0 +1,110 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 400;
+    min-width: 300px;
+    background-color: rgb(242, 242, 242);
+    color: rgb(20, 20, 20);
+}
+
+/* TYPOGRAPHY */
+h1, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 0.25em;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+::placeholder {
+    color: rgb(220, 220, 220);
+}
+
+.total-time {
+    font-size: 2rem;
+
+}
+
+
+
+/* INPUTS AND BOTTONS */
+input {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    border: none;
+    border-radius: 10px;
+}
+
+/* REMOVING ARROWS IN THE INPUT FIELD */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: rgb(246, 246, 246);
+    background-color: rgb(23, 23, 194);
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    /* margin-bottom: 5em; */
+    cursor: pointer;
+}
+
+/* LAYOUT */
+.container {
+    height: 90vh;
+    min-height: 450px;
+    width: 95vw;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 1em;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header {
+    margin: 0;
+    /* border: 1px solid red; */
+    max-width: 450px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+    /* margin-bottom: 2em; */
+    font-size: 2rem;
+}

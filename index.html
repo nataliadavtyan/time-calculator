@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Natalia Davtyan">
+        <title>Time calculator</title>
+        <link rel="stylesheet" href="/index.css">
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Time Calculator</h1>
+                <p>Track the total duration of the videos you made reviewing the students' codes</p>
+            </header>
+            <div class="input-container">
+                <input type="number" id="hours-el" name="hours" placeholder="hh" min="0">
+                :
+                <input type="number" id="minutes-el" name="minutes" placeholder="mm" min="0" max="59">
+                :
+                <input type="number" id="seconds-el" name="seconds" placeholder="ss" min="0" max="59">
+            </div>
+            <button id="calculate-btn">Calculate</button>
+            <div class="total-time" id="total-time-el">
+                <!-- results -->
+            </div>
+        </div>
+        <script src="index.pack.js"></script>
+    </body>
+</html>
